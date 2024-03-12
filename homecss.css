@@ -1,0 +1,109 @@
+body{
+    background-image: url(img/dota.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box{
+    width: 800px;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 40px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    font-family: 'Century Gothic',sans-serif;
+   color: #888;
+}
+.box img{
+ width: 300px;
+}
+
+.skils{
+  text-align: center;
+  padding: 5px;
+}
+.skils button{
+  background-color: transparent;
+  border: none;
+  color: #888;
+}
+.skils img{
+  width: 75px;
+}
+
+.skill{
+width: 800px;
+background: rgba(0, 0, 0, 0.4);
+padding: 40px;
+margin: auto;
+font-family: 'Century Gothic',sans-serif;
+color: #888;
+}
+.skill img{
+  float:left;
+  margin-right: 30px;
+}
+.skill h2{
+  background-color: rgba(255, 0, 0, 0.536);
+  color: white;
+  border-color: #888;
+  border-style:double;
+}
+.skill li{
+  display:inline;
+  margin-left: 20px;
+}
+
+
+
+
+
+
+
+.modal {
+  text-align: center;
+    display: none; 
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); 
+  }
+  .modal-content {
+    background-color: tomato;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .bug{
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .buttonUL{
+    border: none;
+    background-color: transparent;
+    color: blueviolet;
+    text-decoration: normal;
+    transition: text-decoration 0.3s ease;
+  }
+  .buttonUL:hover{
+    text-decoration:underline;
+  }
