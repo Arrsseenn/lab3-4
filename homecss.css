@@ -1,109 +1,60 @@
-body{
-    background-image: url(img/dota.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
-
-.box{
-    width: 800px;
-    background: rgba(0, 0, 0, 0.4);
-    padding: 40px;
-    text-align: center;
-    margin: auto;
-    margin-top: 5%;
-    font-family: 'Century Gothic',sans-serif;
-   color: #888;
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
 }
-.box img{
- width: 300px;
+.block {
+  display: inline-block;
+  width: 24%; 
+  height: 100vh; 
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  border-right: 2px solid #ccc; 
+  border-bottom: 2px solid #ccc; 
+  position: relative; 
+  vertical-align: top;
 }
-
-.skils{
+.block:nth-child(4n),
+.block:nth-child(4n-1) {
+  border-right: none; 
+}
+.block:nth-child(n + 5) {
+  border-bottom: none;
+}
+.block h2 {
+  margin: 0;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+  font-size: 24px;
   text-align: center;
-  padding: 5px;
 }
-.skils button{
-  background-color: transparent;
-  border: none;
-  color: #888;
+.block ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
-.skils img{
-  width: 75px;
+.block ul li {
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
 }
-
-.skill{
-width: 800px;
-background: rgba(0, 0, 0, 0.4);
-padding: 40px;
-margin: auto;
-font-family: 'Century Gothic',sans-serif;
-color: #888;
+.block ul li:nth-child(even) {
+  color: red;
 }
-.skill img{
-  float:left;
-  margin-right: 30px;
+.block::before {
+  content: attr(
+    data-counter
+  ); 
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  color: #fff;
 }
-.skill h2{
-  background-color: rgba(255, 0, 0, 0.536);
-  color: white;
-  border-color: #888;
-  border-style:double;
-}
-.skill li{
-  display:inline;
-  margin-left: 20px;
-}
-
-
-
-
-
-
-
-.modal {
-  text-align: center;
-    display: none; 
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0,0,0,0.5); 
-  }
-  .modal-content {
-    background-color: tomato;
-    margin: 15% auto; 
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-
-  .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-
-  .bug{
-    padding-top: 10px;
-    text-align: center;
-  }
-
-  .buttonUL{
-    border: none;
-    background-color: transparent;
-    color: blueviolet;
-    text-decoration: normal;
-    transition: text-decoration 0.3s ease;
-  }
-  .buttonUL:hover{
-    text-decoration:underline;
-  }
