@@ -1,60 +1,27 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+table {
+    width: 100%;
+    border: 0;
+    text-align: center;
 }
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
-  overflow: hidden;
+
+.visit-card {
+    border-style: dashed;
+    border-width: thin;
+    text-align: center;
 }
-.block {
-  display: inline-block;
-  width: 24%; 
-  height: 100vh; 
-  background-color: #f2f2f2;
-  box-sizing: border-box;
-  border-right: 2px solid #ccc; 
-  border-bottom: 2px solid #ccc; 
-  position: relative; 
-  vertical-align: top;
+
+img {
+    max-width: 100px; /* Розмір зображення */
 }
-.block:nth-child(4n),
-.block:nth-child(4n-1) {
-  border-right: none; 
+
+b {
+    font-size: 1.2em; /* Жирний текст */
 }
-.block:nth-child(n + 5) {
-  border-bottom: none;
+
+i {
+    font-size: 1em; /* Курсив */
 }
-.block h2 {
-  margin: 0;
-  padding: 20px;
-  background-color: #333;
-  color: #fff;
-  font-size: 24px;
-  text-align: center;
-}
-.block ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-.block ul li {
-  padding: 10px;
-  background-color: #fff;
-  color: #333;
-}
-.block ul li:nth-child(even) {
-  color: red;
-}
-.block::before {
-  content: attr(
-    data-counter
-  ); 
-  display: block;
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 20px;
-  color: #fff;
+
+font {
+    color: blue; /* Синій колір тексту */
 }
